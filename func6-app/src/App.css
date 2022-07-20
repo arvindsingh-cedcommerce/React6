@@ -1,0 +1,40 @@
+.main{
+  width: 95%;
+  margin: auto;
+}
+
+.section{
+  margin-top: 2%;
+  display: flex;
+}
+.section .left{
+  margin: 0 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+}
+.left .dashboard{
+  background-color: #61dafb;
+  height: 46%;
+  /* margin-bottom: 3%; */
+}
+.left .trends{
+  background-color: #61dafb;
+  height: 46%;
+  
+}
+.section .center{
+  height: 50vh;
+  background-color: #61dafb;
+  margin: 0 1%;
+  width: 40%;
+  padding: 10% 4%;
+}
+.section .right{
+  background-color: #61dafb;
+  padding: 4% 4%;
+  height: 30vh;
+  margin: 0 2%;
+  width: 30%;
+}

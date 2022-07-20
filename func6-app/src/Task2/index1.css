@@ -1,0 +1,66 @@
+
+.navbar1 {
+    border: 1px solid black;
+    height: 100px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(8, 112, 197);
+}
+.section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 500px;
+    
+}
+.combined {
+  
+   width: 25%;
+   margin-right: 15px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+  
+}
+.profile {
+    border: 1px solid black;
+    height: 230px; 
+    align-items: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(8, 112, 197);
+
+}
+
+.trends {
+    border: 1px solid black;
+    height: 230px;
+    display: flex;
+    justify-content:center;
+    align-items: center; 
+    background-color: rgb(8, 112, 197);
+
+}
+
+.feed {
+    border: 1px solid black;
+    width: 45%;
+    margin-right: 15px;
+    text-align: center;
+    padding-top: 50px;
+    background-color: rgb(8, 112, 197);
+
+}
+.follow {
+    border: 1px solid black;
+    height: 200px;
+    width: 25%;
+    vertical-align:baseline;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(8, 112, 197);
+
+}
