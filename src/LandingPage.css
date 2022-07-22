@@ -1,0 +1,57 @@
+body {
+    background: url('https://www.digitalartsonline.co.uk/cmsdata/features/3681556/lyft_spin.gif') no-repeat;
+    background-size: 100vw 110vh;
+}
+.landing {
+    filter: brightness(100%);
+    width: 100vw;
+    height: 100vh;
+}
+.footer {
+    background-color: rgb(180, 190, 194);
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    align-items:flex-start;
+    padding-left: 10vw;
+    padding-bottom: 2rem;
+}
+.footer #makemoney {
+    font-size: 2.5vw;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.footer #hours {
+  font-size: 1.3vw;
+  color: rgb(87, 85, 85);
+}
+.footer div input {
+    height: 4vh;
+
+    margin-right: .3rem;
+    border: 0;
+    border-radius: 4px;
+    padding-left: 1vw;
+}
+.footer div input#one {
+    width: 8vw;
+    font-size: 1.3vw;
+}
+.footer div input#two {
+    width: 15vw;
+    font-size: 1.3vw;
+}
+.footer div input:focus {
+    outline: none;
+}
+.footer div button {
+    height: 4.5vh;
+    width: 15vw;
+    background-color: rgb(223, 20, 145);
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.4vw;
+    font-weight: bold;
+}
