@@ -1,0 +1,97 @@
+.single-page {
+    text-align: left;
+    background-color: #ffffff;
+    width: 80vw;
+
+}
+
+.single-page img {
+    width: 80vw;
+    height: 70vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.single-page p {
+    margin-left: 1rem;
+    color: rgb(109, 106, 106);
+    font-weight: 400;
+    font-size: 1.5vw;
+    margin: 0.5rem 0 0 1rem;
+}
+
+.single-page p span {
+    color: green
+}
+
+hr {
+    margin: 2% 2%;
+}
+
+.review {
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+.review .photo-name {
+    display: flex;
+}
+
+.review .photo-name div img {
+    height: 8vh;
+    width: 5vw;
+}
+
+.review p {
+    margin-left: 0;
+}
+
+.review p span {
+    font-weight: bolder;
+}
+
+.user-name {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 0.5vh;
+    margin-left: 0;
+}
+
+.single-review {
+    background-color: rgb(227, 227, 245);
+    margin-bottom: 0.7rem;
+    border-radius: 5px;
+    margin-right: 1.5vw;
+    padding: 2vh;
+}
+
+.parent-single-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.operating-hours {
+    display: none;
+}
+
+#hours {
+    width: 40%;
+    margin-left: 1rem;
+    box-shadow: 1px 1px 10px 5px #d4d1d1; 
+    border-radius: 10px;
+    padding: 1vw;
+    padding-right: 2vw;
+    position: absolute;
+    background-color: white;
+}
+#hours p {
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    margin-top: 2.4vh;
+}
