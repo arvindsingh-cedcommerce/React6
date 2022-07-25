@@ -1,0 +1,50 @@
+.main {
+ background-color: rgb(159, 81, 231);
+ width: 40%;
+ height: 60vh;
+ margin:8rem auto;
+ padding: 5px;
+}
+
+.parent-div {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ text-align: center;
+ width: 99%;
+ height: 100%;
+ background-color: rgb(255, 255, 255);
+ margin: auto;
+}
+
+.child-div {
+    display: flex;
+    justify-content: space-between;
+    /* width: 82%; */
+}
+select {
+    padding: 10px;
+   font-size: 2vw;
+   border:1px solid gray;
+   border-radius: 3px;
+}
+select:focus {
+  outline: none;
+}
+button {
+    background-color: rgb(159, 81, 231);
+    font-size: 2vw;
+    color: white;
+    height: 12vh;
+    border: 0;
+    border-radius: 5px;
+    /* margin-bottom: 2rem; */
+    cursor: pointer;
+    width: 80%;
+    margin: 1rem auto;
+}
+#country {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
