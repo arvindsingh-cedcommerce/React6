@@ -1,0 +1,58 @@
+.navbar {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+}
+
+
+
+.navbar .part1 #para1 {
+    color: rgb(43, 10, 105);
+    font-weight: 500;
+    font-size: 2vw;
+    margin-bottom: 0;
+}
+
+.navbar .part1 #para2 {
+    margin: 0;
+    font-size: 3vw;
+    color: rgb(118, 116, 236);
+}
+
+.navbar .part2 p span {
+    /* margin: 2vw; */
+    color: rgb(43, 10, 105);
+    font-weight: 360;
+    padding: 1vw 2.5vw 1vw;
+    border-radius: 100px;
+    font-size: 1.5vw;
+}
+
+.navbar .part2 p span:hover {
+    background-color: rgb(118, 116, 236);
+    color: aliceblue;
+    cursor: pointer;
+
+}
+@media screen and (max-width: 600px) { 
+    .App {
+        height: 98.7vh;
+    }
+    .navbar .part1 #para1 {
+        font-size: 4.1vw;
+        margin-left: 1vw;
+        margin-right: 1.2vw;
+    }
+    .navbar .part1 #para2 {
+        
+        font-size: 4vw;
+        
+    }
+    .navbar .part2 p span {
+        padding: 0vw 1.5vw 0vw;
+        border-radius: 100px;
+        font-size: 3.1vw;
+    }
+}
