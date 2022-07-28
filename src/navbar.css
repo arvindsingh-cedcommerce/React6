@@ -1,0 +1,49 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    height: 15vh;
+    background-color: rgb(148, 214, 216);
+     padding-top: 2rem;
+     width: 100%;
+}
+.navbar .part1 img {
+    height: 9vh;
+    width: 12vw;
+}
+.navbar .part2 p span {
+  padding: 1.2vw 1.8vw;
+  color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.navbar .part2 p span#start {
+    background-color: rgb(247, 104, 52);
+}
+.navbar .part2 p span:hover {
+    background-color: rgb(228, 155, 128);
+}
+@media screen and (max-width: 600px) {
+    .navbar {
+        height: 10vh;
+    }
+    .navbar .part1 img {
+        height: 9vh;
+        width: 19vw;
+        margin-left: 1vw;
+    }
+    .navbar .part2 p span {
+        padding: 1vw 1.2vw;
+        color: rgb(255, 255, 255);
+        font-size: 0.9rem;
+        font-weight: 500;
+        cursor: pointer;
+        margin-bottom: 5rem;
+      }
+      .navbar .part2 p span#start {
+          background-color: rgb(247, 104, 52);
+      }
+      .navbar .part2 p span:hover {
+          background-color: rgb(228, 155, 128);
+      }
+}
