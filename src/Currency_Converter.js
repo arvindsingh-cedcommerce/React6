@@ -67,7 +67,7 @@ export default function Currency_Converter() {
               <p>To</p>
               <div id='country' style={{ border: '1px solid gray', borderRadius: '3px' }}>
                 <img src='https://iconarchive.com/download/i109170/wikipedia/flags/IN-India-Flag.ico' style={{ width: '4vw' }} />
-                <span style={{ marginTop: '2vh' }}><div> USD <i class="fa-solid fa-caret-down"></i></div></span>
+                <span style={{ marginTop: '2vh' }}><div> INR <i class="fa-solid fa-caret-down"></i></div></span>
               </div>
             </div>
 
@@ -94,7 +94,7 @@ export default function Currency_Converter() {
               <p>From</p>
               <div id='country' style={{ border: '1px solid gray', borderRadius: '3px' }}>
                 <img src='https://iconarchive.com/download/i109170/wikipedia/flags/IN-India-Flag.ico' style={{ width: '4vw' }} />
-                <span style={{ marginTop: '2vh' }}><div> USD <i class="fa-solid fa-caret-down"></i></div></span>
+                <span style={{ marginTop: '2vh' }}><div> INR <i class="fa-solid fa-caret-down"></i></div></span>
               </div>
             </div>
 
