@@ -1,0 +1,10 @@
+.back{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: url("../public/bgss.png");
+    background-size: cover;
+    width: 43ch;
+    margin: auto;
+    /* color:#042a42 */
+}
