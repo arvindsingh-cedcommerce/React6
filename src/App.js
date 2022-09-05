@@ -30,24 +30,19 @@ const Container = styled(Grid)`
 `
 function App() {
 // array to store new transactions
-  const [transaction, setTransaction] = useState([
-    { id: 1, text: "Grocery", amount: 1000 },
-    { id: 2, text: "Veggies", amount: -100 },
-    { id: 3, text: "Travelling", amount: 1990 },
-    { id: 4, text: "Miscellaneous", amount: -20 },
-  ]);
+  const [transaction, setTransaction] = useState([]);
   const [id, setId] = useState(false);
   const [text, setText] = useState("");
   const [amount, setAmount] = useState("");
   const [index, setIndex] = useState("");
-
+  const [flag, setFlag] = useState('');
   return (
     <div className="App">
       <Header>Expense Manager</Header>
       <ExpenseContext.Provider
-        value={{ id, setId, text, setText, amount, setAmount, index, setIndex }}
+        value={{ id, setId, text, setText, amount, setAmount, index, setIndex,flag, setFlag }}
       >
-        <Container container>
+        <Container container justifyContent="center">
           <Grid item>
             <Balance transactions={transaction} />
             <ExpenseCard transactions={transaction} />
@@ -56,12 +51,14 @@ function App() {
               setTransaction={setTransaction}
             />
           </Grid>
+          {transaction.length > 0 ? 
           <Grid item>
-            <Transactions
-              transactions={transaction}
-              setTransaction={setTransaction}
-            />
-          </Grid>
+          <Transactions
+            transactions={transaction}
+            setTransaction={setTransaction}
+          />
+        </Grid> :
+        null}
         </Container>
       </ExpenseContext.Provider>
     </div>
