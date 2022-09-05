@@ -1,14 +1,25 @@
-import React, { useState } from 'react'
-import { AppBar, styled, Toolbar, Box, Typography, InputBase, Menu, MenuItem } from "@mui/material";
+import React, { useContext, useState } from 'react'
+import { AppBar, styled, Toolbar, Box, Typography, InputBase, Menu, MenuItem, Tooltip } from "@mui/material";
 import { Facebook, Instagram, Menu as MenuIcon, Twitter } from '@mui/icons-material/';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import BorderColorIcon from '@mui/icons-material/BorderColor';
 import Home from '../home/Home';
-
-
+import Signup from '../signup-signin/Signup';
+import { BlogContext } from '../../App';
 
 
 export default function Navbar() {
+  const navi = useNavigate();
+  let { flag } = useContext(BlogContext);
+  // function to add a new BLOG
+  const AddBlog = () => {
+    if (flag === true) {
+      navi('/AddBLog');
+    }
+    else {
+      navi('/signin');
+    }
+  }
 
   const StyledToolbar = styled(Toolbar)({
     display: 'flex',
@@ -17,7 +28,7 @@ export default function Navbar() {
   })
   const SocialBox = styled(Box)({
     display: 'flex'
-  }); 
+  });
   const MenuBox = styled(Box)({
     display: 'flex',
     gap: 30
@@ -32,6 +43,13 @@ export default function Navbar() {
       text-decoration:none;
      }
   `
+  const StyledBox = styled(Box)`
+     color:white;
+     text-decoration:none;
+     &:focus, &:hover, &:visited, &:link, &:active {
+      text-decoration:none;
+     }
+  `
   const StyledLink1 = styled(Link)`
      color:black;
      text-decoration:none;
@@ -39,35 +57,46 @@ export default function Navbar() {
       text-decoration:none;
      }
   `
-
+  const StyledBox1 = styled(Box)`
+  color:black;
+  text-decoration:none;
+  &:focus, &:hover, &:visited, &:link, &:active {
+   text-decoration:none;
+  }
+`
   const [open, setOpen] = useState(false);
 
   return (
     <AppBar sx={{ background: 'black', position: 'static' }}>
+      {/* Social Media Icons */}
       <StyledToolbar>
         <SocialBox>
-          <Facebook sx={{m:1}} />
-          <Instagram sx={{m:1}} />
-          <Twitter sx={{m:1}} />
+          <Facebook sx={{ m: 1 }} />
+          <Instagram sx={{ m: 1 }} />
+          <Twitter sx={{ m: 1 }} />
         </SocialBox>
+        {/* Navigation Links */}
         <MenuBox sx={{ display: { xs: 'none', sm: 'none', md: 'flex' } }}>
-          {/* {MenuItems.map((item) => (
-            <Typography sx={{ cursor: 'pointer', fontSize: '14px' }}>{item.Name}</Typography>
-          ))} */}
           <StyledLink to='/' element={<Home />} >Home</StyledLink>
           <StyledLink to='/' element={<Home />} >Search</StyledLink>
           <StyledLink to='/' element={<Home />} >Contact Us</StyledLink>
           <StyledLink to='/' element={<Home />} >About Us</StyledLink>
-          <StyledLink to='/' element={<Home />} >Profile</StyledLink>
+          <Tooltip disableFocusListener title={<p style={{ fontSize: '15px' }}>Login / Signup</p>}>
+            <StyledLink to='/signin' element={<Signup />} >
+              Profile
+            </StyledLink>
+          </Tooltip>
         </MenuBox>
+        {/* Search Box */}
         <SearchBox>
           <InputBase placeholder='Search...' sx={{ color: 'white' }} />
           <MenuIcon sx={{ cursor: 'pointer', display: { xs: 'block', sm: 'block', md: 'none' } }} onClick={() => { setOpen(!open) }} />
         </SearchBox>
-        <Box sx={{ display: { xs: 'none', sm: 'none', md: 'flex' } }}>
-          <StyledLink to='/AddBLog'>Add Your Blog <BorderColorIcon/></StyledLink>
+        <Box sx={{ display: { xs: 'none', sm: 'none', md: 'flex', cursor: 'pointer' } }}>
+          <StyledBox onClick={AddBlog}>Add Your Blog <BorderColorIcon /></StyledBox>
         </Box>
       </StyledToolbar>
+      {/* side bar for mobile view */}
       <Menu
         id="demo-positioned-menu"
         aria-labelledby="demo-positioned-button"
@@ -89,10 +118,8 @@ export default function Navbar() {
           <MenuItem onClick={() => { setOpen(!open) }}><StyledLink1 to='/' element={<Home />} >Contact Us</StyledLink1></MenuItem>
           <MenuItem onClick={() => { setOpen(!open) }}><StyledLink1 to='/' element={<Home />} >About Us</StyledLink1></MenuItem>
           <MenuItem onClick={() => { setOpen(!open) }}><StyledLink1 to='/' element={<Home />} >Profile</StyledLink1></MenuItem>
-          <MenuItem onClick={() => { setOpen(!open) }}><StyledLink1 to='/AddBLog'>Add Your Blog <BorderColorIcon/></StyledLink1></MenuItem>
-          
+          <MenuItem onClick={() => { setOpen(!open) }}><StyledBox1 onClick={AddBlog}>Add Your Blog <BorderColorIcon /></StyledBox1></MenuItem>
         </Box>
-
       </Menu>
     </AppBar>
   )

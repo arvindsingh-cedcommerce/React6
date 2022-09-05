@@ -7,97 +7,90 @@ import DeleteIcon from '@mui/icons-material/Delete'; import { useNavigate } from
 import Popover from '@mui/material/Popover';
 import Blogs from '../data';
 import { SettingsSystemDaydream } from '@mui/icons-material';
-
+import Navbar from '../components/navbar/Navbar';
+import Footer from '../components/footer/Footer';
+// component to edit or delete the BLOG
 const Details = () => {
   let Naigate = useNavigate();
-  // let Blog = Blogs();
+  let Blog = Blogs();
   const [edit, setEdit] = useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const [checkclick,setcheckclick]=useState(false)
-  // const [heading, setHeading] = React.useState('');
-  // const [title, setTitle] = React.useState('');
-  // const [subTitle, setSubTitle] = React.useState('');
-  // const [description, setDescription] = React.useState('');
-
-  const {Blog, ID, title, setTitle, heading, setHeading, subTitle, setSubTitle, description, setDescription } = useContext(BlogContext);
+  const [indx, setIndx] = React.useState('');
+  const [checkclick, setcheckclick] = useState(false);
+  const { ID, title, setTitle, heading, setHeading, subTitle, setSubTitle, description, setDescription,flag } = useContext(BlogContext);
   console.log(ID);
 
+  // function to edit the Blog
   const Edit = () => {
+    if(flag === true) {
     setEdit(true);
     document.getElementById('icons').style.display = 'none';
     document.getElementById('save').style.display = 'block';
+    }
+    else {
+      Naigate('/signin')
+    }
   }
-
+  // It works to move focus to the editable block to edit the BLOG
   React.useEffect(() => {
     document.getElementById('para').focus();
   }, [edit])
-
+// function to delete the BLOG
   const Delete = (index) => {
-    Blog.splice(index, 1);
-    Naigate('/');
+    if(flag === true) {
+      Blog.splice(index, 1);
+      Naigate('/');
+    }
+    else {
+      Naigate('/signin')
+    }
   }
   //Delete Confirm
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
-
+ //Abort Delete
   const handleClose = () => {
     setAnchorEl(null);
   };
+  // function to save the changes on the BLOG
   const Save = (index) => {
-    setcheckclick(true)
-    let Heading = document.getElementById('para').textContent;
-    setHeading(Heading);
+    setEdit(false);
+    setIndx(index);
+    let temp = heading
+    temp = document.getElementById('para').textContent;
+    setHeading(temp);
     let Title = document.getElementById('para1').innerText;
     setTitle(Title);
     let SubTitle = document.getElementById('para2').innerText;
     setSubTitle(SubTitle);
     let Description = document.getElementById('para3').innerText;
     setDescription(Description);
-    console.log(heading + "--" + title + "--" + subTitle + "--" + description)
-    setEdit(false);
-    SaveChanges(index);
+    console.log(heading + "--" + title + "--" + subTitle + "--" + description);
+    setcheckclick(true);
   }
-  console.log(heading)
-  // React.useEffect(() => {
-  //   let Heading = document.getElementById('para').textContent;
-  //   let Title = document.getElementById('para1').innerText;
-  //   let SubTitle = document.getElementById('para2').innerText;
-  //   let Description = document.getElementById('para3').innerText;
-  //     setHeading(Heading);
-  //     setTitle(Title);
-
-  //     setSubTitle(SubTitle);
-
-  //     setDescription(Description);
-
-  // },[heading],[title],[subTitle],[description])
-  // React.useEffect(() => {
-  //   let Title = document.getElementById('para1').innerText;
-  //   setTitle(Title);
-  // },[heading])
-  // React.useEffect(() => {
-  //   let SubTitle = document.getElementById('para2').innerText;
-  //   setSubTitle(SubTitle);
-  // },[heading])
-  // React.useEffect(() => {
-  //   let Title = document.getElementById('para1').innerText;
-  //   setTitle(Title);
-  // },[heading])
+  // It call a function to save the changes
+  React.useEffect(() => {
+    if (indx !== '') {
+      SaveChanges(indx);
+    }
+  }, [checkclick]);
+//  function to save the changes
   const SaveChanges = (index) => {
     alert(heading + "--" + title + "--" + subTitle + "--" + description)
+    console.log(title);
     Blog[index].title = title;
     Blog[index].heading = heading;
     Blog[index].subtitle = subTitle;
     Blog[index].description = description;
+    document.getElementById('icons').style.display = 'block';
+    document.getElementById('save').style.display = 'none';
   }
-
   const open = Boolean(anchorEl);
   const id = open ? 'simple-popover' : undefined;
-
-
   return (
     <>
+      <Navbar />
       {Blog.map((item, index) => {
         if (item.id === ID) {
           return (
@@ -156,9 +149,11 @@ const Details = () => {
                       <Box flex={{ xs: 3, sm: 4, md: 3, lg: 5 }}></Box>
                       <Box flex={1}>
                         <div id='icons'>
+                          {/* Edit icon to edit the BLOG */}
                           <BorderColorIcon
                             sx={{ fontSize: 35, color: '#60507C', cursor: "pointer" }}
                             onClick={Edit} />&nbsp;&nbsp;
+                            {/* Delete icon to delete the BLOG */}
                           <DeleteIcon aria-describedby={id} onClick={handleClick}
                             sx={{ fontSize: 40, color: 'red', cursor: "pointer" }} />
                           <Popover
@@ -188,28 +183,11 @@ const Details = () => {
                   </Box>
                 </Stack>
               </Container>
-              {/* <Box>
-                <Button aria-describedby={id} variant="contained" onClick={handleClick}>
-                  Open Popover
-                </Button>
-                <Popover
-                  id={id}
-                  open={open}
-                  anchorEl={anchorEl}
-                  onClose={handleClose}
-                  anchorOrigin={{
-                    vertical: 'bottom',
-                    horizontal: 'left',
-                  }}
-                >
-                  <Typography sx={{ p: 2 }}>The content of the Popover.</Typography>
-                </Popover>
-              </Box> */}
             </Box>
           )
         }
       })}
-
+      <Footer />
     </>
   )
 }

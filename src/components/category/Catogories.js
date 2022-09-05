@@ -33,7 +33,6 @@ const Catogories = () => {
         NASA Breaking News
         </StyledTypography>
        </StyledBox>
-       
         </Stack>
     </Box>
   )

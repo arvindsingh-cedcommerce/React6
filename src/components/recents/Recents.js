@@ -15,8 +15,6 @@ const StyledLink = styled(Link)`
 
 const Recents = () => {
 
-  let Blog = Blogs();
-
   return (
     <Box>
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 1, md: 1 }}>

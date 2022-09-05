@@ -1,0 +1,9 @@
+.back{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: url("/public/images/bgss.png");
+    background-size: cover;
+    width: 43ch;
+    margin: auto;
+}

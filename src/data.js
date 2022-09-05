@@ -1,3 +1,4 @@
+// array to store blogs as data
 let data = [
     {
         id:'0',

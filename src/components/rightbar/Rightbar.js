@@ -1,7 +1,7 @@
 import { Avatar, Box, CardContent, CardMedia, Divider, List, ListItem, ListItemAvatar, ListItemText, Typography } from '@mui/material'
-import React from 'react'
+import React, { Component } from 'react'
 import Card from "../card/Card";
-
+// Right Bar Component of the BLOg
 const Rightbar = () => {
   return (
     <Box >

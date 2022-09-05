@@ -62,7 +62,6 @@ const Footer = () => {
         </SocialBox>
         </Box>
       </Stack>
-
     </Box>
   )
 }
