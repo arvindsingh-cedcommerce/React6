@@ -20,7 +20,7 @@ function App() {
   const [password, setPassword] = useState('');
   const [flag, setFlag] = useState(false);
   return (
-    <>
+    <div className="App">
       <BlogContext.Provider value={{ title, setTitle, heading, setHeading, subTitle, setSubTitle, description, setDescription, image, setImage, ID, setID, username, setUsername, fullname, setFullname, email, setEmail, password, setPassword, flag, setFlag }}>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -32,7 +32,7 @@ function App() {
       </BlogContext.Provider>
       <Routes>
       </Routes>
-    </>
+    </div>
   );
 }
 

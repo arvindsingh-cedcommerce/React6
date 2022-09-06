@@ -1,4 +1,4 @@
-import { Box, CardContent, CardMedia, styled, Typography } from '@mui/material'
+import { Box, CardContent, CardMedia, Grid, styled, Typography } from '@mui/material'
 import React, { useContext } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { BlogContext } from '../../App';
@@ -43,6 +43,7 @@ const Card = () => {
           </CardContent>
         </StyledLink>
       ))}
+     
     </Box>
   )
 }

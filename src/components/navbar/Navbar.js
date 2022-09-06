@@ -9,8 +9,9 @@ import { BlogContext } from '../../App';
 
 
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
   const navi = useNavigate();
-  let { flag } = useContext(BlogContext);
+  let { flag, setFlag } = useContext(BlogContext);
   // function to add a new BLOG
   const AddBlog = () => {
     if (flag === true) {
@@ -20,7 +21,10 @@ export default function Navbar() {
       navi('/signin');
     }
   }
-
+  const Logout = () => {
+    if (window.confirm("Sure, you want to log out"))
+      setFlag(false)
+  }
   const StyledToolbar = styled(Toolbar)({
     display: 'flex',
     justifyContent: 'space-between',
@@ -64,7 +68,6 @@ export default function Navbar() {
    text-decoration:none;
   }
 `
-  const [open, setOpen] = useState(false);
 
   return (
     <AppBar sx={{ background: 'black', position: 'static' }}>
@@ -81,15 +84,21 @@ export default function Navbar() {
           <StyledLink to='/' element={<Home />} >Search</StyledLink>
           <StyledLink to='/' element={<Home />} >Contact Us</StyledLink>
           <StyledLink to='/' element={<Home />} >About Us</StyledLink>
-          <Tooltip disableFocusListener title={<p style={{ fontSize: '15px' }}>Login / Signup</p>}>
-            <StyledLink to='/signin' element={<Signup />} >
-              Profile
-            </StyledLink>
-          </Tooltip>
+          {flag === false ?
+            <Tooltip disableFocusListener title={<p style={{ fontSize: '15px' }}>Login / Signup</p>}>
+              <StyledLink to='/signin' element={<Signup />} >
+                Log In
+              </StyledLink>
+            </Tooltip>
+            : <Tooltip disableFocusListener title={<p style={{ fontSize: '15px' }}>Logout</p>}>
+              <StyledLink to='#' onClick={Logout} element={<Signup />} >
+                Logout
+              </StyledLink>
+            </Tooltip>}
         </MenuBox>
         {/* Search Box */}
         <SearchBox>
-          <InputBase placeholder='Search...' sx={{ color: 'white' }} />
+          <InputBase placeholder=' Search...' sx={{ color: 'white', border: '1px solid white', borderRadius: '15px' }} />
           <MenuIcon sx={{ cursor: 'pointer', display: { xs: 'block', sm: 'block', md: 'none' } }} onClick={() => { setOpen(!open) }} />
         </SearchBox>
         <Box sx={{ display: { xs: 'none', sm: 'none', md: 'flex', cursor: 'pointer' } }}>

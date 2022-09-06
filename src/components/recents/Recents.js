@@ -25,7 +25,7 @@ const Recents = () => {
               component="img"
               alt="green iguana"
               height="100%"
-              image={"images/milky-way.jpg"}
+              image={"images/universe.jpg"}
             />
             <CardContent>
               <Typography gutterBottom variant="body1" align="center" component="div" color="tomato" >
@@ -43,9 +43,12 @@ const Recents = () => {
             </CardContent>
           </Box>
         </Grid>
-        <Grid item xs={12} md={6} >
+        <Grid item  xs={12} md={10} >
           <Card />
         </Grid>
+        {/* <Grid item xs={12} md={6} >
+          <Card />
+        </Grid> */}
       </Grid>
     </Box>
   );

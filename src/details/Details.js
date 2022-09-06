@@ -72,7 +72,7 @@ const Details = () => {
   // It call a function to save the changes
   React.useEffect(() => {
     if (indx !== '') {
-      SaveChanges(indx);
+      SaveChanges(indx); 
     }
   }, [checkclick]);
 //  function to save the changes
@@ -178,7 +178,7 @@ const Details = () => {
                       </Box>
                     </Stack>
                   </Box>
-                  <Box flex={1}>
+                  <Box flex={1.5}>
                     <Rightbar />
                   </Box>
                 </Stack>
