@@ -1,0 +1,625 @@
+{
+    "products": [
+        {
+            "id":1,
+            "category":"gulab jamun",
+            "name":"Gulab Jamun",
+            "price":380,
+            "subtotal":380,
+            "image":"images/gulab jamun/GJ1.webp",
+            "quantity":1
+        },
+        {
+            "id":2,
+            "category":"gulab jamun",
+            "name":"Gulab Jamun Mix - 100gm",
+            "price":50,
+            "subtotal":50,
+            "image":"images/gulab jamun/GJ2.webp",
+            "quantity":1
+        },
+        {
+            "id":3,
+            "category":"gulab jamun",
+            "name":"Gulab Jamun Mix",
+            "price":80,
+            "subtotal":80,
+            "image":"images/gulab jamun/GJ3.webp",
+            "quantity":1
+        },
+        {
+            "id":4,
+            "category":"gulab jamun",
+            "name":"Gulab Jamun Mix(200g)",
+            "price":120,
+            "subtotal":120,
+            "image":"images/gulab jamun/GJ4.webp",
+            "quantity":1
+        },
+        {
+            "id":5,
+            "category":"gulab jamun",
+            "name":"GULAB JAMUN RECIPE",
+            "price":180,
+            "subtotal":180,
+            "image":"images/gulab jamun/GJ5.webp",
+            "quantity":1
+        },
+        {
+            "id":6,
+            "category":"gulab jamun",
+            "name":"Gulab Jamun Sweets 500Gram",
+            "price":80,
+            "subtotal":80,
+            "image":"images/gulab jamun/GJ6.webp",
+            "quantity":1
+        },
+        {
+            "id":7,
+            "category":"gulab jamun",
+            "name":"Gulab Jamun Sweet",
+            "price":150,
+            "subtotal":150,
+            "image":"images/gulab jamun/GJ9.webp",
+            "quantity":1
+        },
+        {
+            "id":8,
+            "category":"gulab jamun",
+            "name":"DMB Gulab Jamun, 1000 grams",
+            "price":338,
+            "subtotal":338,
+            "image":"images/gulab jamun/GJ7.webp",
+            "quantity":1
+        },
+        {
+            "id":9,
+            "category":"gulab jamun",
+            "name":"DMB Gulab Jamun, 1000 grams (Pack of 1)",
+            "price":380,
+            "subtotal":380,
+            "image":"images/gulab jamun/GJ8.webp",
+            "quantity":1
+        },
+        {
+            "id":10,
+            "category":"gulab jamun",
+            "name":"Makhan Bhog Gulab Jamun Ghee Sweet 1 kg",
+            "price":380,
+            "subtotal":380,
+            "image":"images/gulab jamun/GJ10.webp",
+            "quantity":1
+        },
+        {
+            "id":11,
+            "category":"gulab jamun",
+            "name":"Dark Temptations Gulab Jamun Fresh Cream Cake Veg 1kg",
+            "price":1400,
+            "subtotal":1400,
+            "image":"images/gulab jamun/GJ11.webp",
+            "quantity":1
+        },
+        {
+            "id":12,
+            "category":"rasgulla",
+            "name":"Rasgulla Sweet 1 KG",
+            "price":280,
+            "subtotal":280,
+            "image":"images/rasgulla/badshah-rasgulla.jpg",
+            "quantity":1
+        },
+        {
+            "id":13,
+            "category":"rasgulla",
+            "name":"Rasgulla Sweet 1 KG, 2 KG, 4 KG, 500 gms",
+            "price":50,
+            "subtotal":50,
+            "image":"images/rasgulla/diwali-hamper.jpg",
+            "quantity":1
+        },
+        {
+            "id":14,
+            "category":"rasgulla",
+            "name":"Rasgulla Gol Matol",
+            "price":80,
+            "subtotal":80,
+            "image":"images/rasgulla/dmb-rasgulla.jpg",
+            "quantity":1
+        },
+        {
+            "id":15,
+            "category":"rasgulla",
+            "name":"DMB Rasgulla, 100 grams",
+            "price":560,
+            "subtotal":560,
+            "image":"images/rasgulla/jaiccha-holi-gift.jpg",
+            "quantity":1
+        },
+        {
+            "id":16,
+            "category":"rasgulla",
+            "name":"Pursuit Rasgulla - 1 kg",
+            "price":350,
+            "subtotal":350,
+            "image":"images/rasgulla/lalji-rasgulla.jpg",
+            "quantity":1
+        },
+        {
+            "id":17,
+            "category":"rasgulla",
+            "name":"Gits 2Kg Ready To Eat Rasgulla Tins",
+            "price":440,
+            "subtotal":440,
+            "image":"images/rasgulla/makhan-rasgulla.jpg",
+            "quantity":1
+        },
+        {
+            "id":18,
+            "category":"rasgulla",
+            "name":"Jaiccha Ghasitaram Holi Rust Hamper",
+            "price":1559,
+            "subtotal":1559,
+            "image":"images/rasgulla/pursuit-rasgulla.jpg",
+            "quantity":1
+        },
+        {
+            "id":19,
+            "category":"rasgulla",
+            "name":"Recent Rasgulla 1.25 Kg",
+            "price":220,
+            "subtotal":220,
+            "image":"images/rasgulla/rasgulla1.jpg",
+            "quantity":1
+        },
+        {
+            "id":20,
+            "category":"rasgulla",
+            "name":"Patanjali Rasgulla",
+            "price":195,
+            "subtotal":195,
+            "image":"images/rasgulla/recent-rasgulla.jpg",
+            "quantity":1
+        },
+        {
+            "id":21,
+            "category":"jalebi",
+            "name":"Indian Crafts Decorative Sweet Box",
+            "price":700,
+            "subtotal":700,
+            "image":"images/jalebi/indian-crafts-dry-fruit.jpg",
+            "quantity":1
+        },
+        {
+            "id":22,
+            "category":"jalebi",
+            "name":"Bikaji Falahari Station Indian Sweet",
+            "price":634,
+            "subtotal":634,
+            "image":"images/jalebi/jalebi1.jpg",
+            "quantity":1
+        },
+        {
+            "id":23,
+            "category":"jalebi",
+            "name":"Bikaji Fatafat Fasting Mix Indian Sweet",
+            "price":509,
+            "subtotal":509,
+            "image":"images/jalebi/jalebi2.jpg",
+            "quantity":1
+        },
+        {
+            "id":24,
+            "category":"jalebi",
+            "name":"Delight Foods Alwar Kalakand 250G Milk Cake",
+            "price":495,
+            "subtotal":495,
+            "image":"images/jalebi/jalebi3.jpg",
+            "quantity":1
+        },
+        {
+            "id":69,
+            "category":"jalebi",
+            "name":"Delight Foods Alwar Kalakand 250G Milk Cake",
+            "price":495,
+            "subtotal":495,
+            "image":"images/jalebi/jalebi5.jpg",
+            "quantity":1
+        },
+        {
+            "id":25,
+            "category":"jalebi",
+            "name":"Ghasitaram North Indian Punjabi Sweet",
+            "price":925,
+            "subtotal":925,
+            "image":"images/jalebi/jalebi4.jpg",
+            "quantity":1
+        },
+        {
+            "id":26,
+            "category":"ladoo",
+            "name":"Ghasitaram North Indian Punjabi Sweets",
+            "price":389,
+            "subtotal":389,
+            "image":"images/laddu/laddu1.jpg",
+            "quantity":1
+        },
+        {
+            "id":27,
+            "category":"ladoo",
+            "name":"Ghasitaram Besan Sweets",
+            "price":925,
+            "subtotal":925,
+            "image":"images/laddu/laddu2.jpg",
+            "quantity":1
+        },
+        {
+            "id":28,
+            "category":"ladoo",
+            "name":"Laduraja Healthy & Tasty Balant Laddu",
+            "price":925,
+            "subtotal":925,
+            "image":"images/laddu/laddu3.jpg",
+            "quantity":1
+        },
+        {
+            "id":29,
+            "category":"ladoo",
+            "name":"Benagli Sweet-Gold",
+            "price":925,
+            "subtotal":925,
+            "image":"images/laddu/laddu4.jpg",
+            "quantity":1
+        },
+        {
+            "id":30,
+            "category":"ladoo",
+            "name":"Bikaji Motichoor Laddu",
+            "price":335,
+            "subtotal":335,
+            "image":"images/laddu/laddu5.jpg",
+            "quantity":1
+        },
+        {
+            "id":31,
+            "category":"ladoo",
+            "name":"Dauraja Ragi Laddu Indian Sweet",
+            "price":189,
+            "subtotal":189,
+            "image":"images/laddu/laddu6.png",
+            "quantity":1
+        },
+        {
+            "id":32,
+            "category":"barfi",
+            "name":"Delight Foods Kaju Katli 500G",
+            "price":700,
+            "subtotal":700,
+            "image":"images/barfi/barfi1.jpg",
+            "quantity":1
+        },
+        {
+            "id":33,
+            "category":"barfi",
+            "name":"Bikano Indian Sweets Khoya Pista Burfi",
+            "price":700,
+            "subtotal":700,
+            "image":"images/barfi/bikaji-barfi.png",
+            "quantity":1
+        },
+        {
+            "id":34,
+            "category":"barfi",
+            "name":"Bikano Indian Sweets Khoya Kesar Burfi",
+            "price":500,
+            "subtotal":500,
+            "image":"images/barfi/bikaji-barfi1.png",
+            "quantity":1
+        },
+        {
+            "id":35,
+            "category":"barfi",
+            "name":"Bikaji Plain Burfi Indian Sweets",
+            "price":350,
+            "subtotal":350,
+            "image":"images/barfi/bikaji-barfi2.png",
+            "quantity":1
+        },
+        {
+            "id":36,
+            "category":"barfi",
+            "name":"Bikano Indian Sweets Khoya Kesar Burfi",
+            "price":450,
+            "subtotal":450,
+            "image":"images/barfi/bikaji-mango-barfi.png",
+            "quantity":1
+        },
+        {
+            "id":37,
+            "category":"barfi",
+            "name":"Bikano Indian Sweets Sugar Free Kaju Burfi",
+            "price":600,
+            "subtotal":600,
+            "image":"images/barfi/bikano-barfi.jpg",
+            "quantity":1
+        },
+        {
+            "id":38,
+            "category":"barfi",
+            "name":"Indian Craft Decorative Sweet Box",
+            "price":700,
+            "subtotal":700,
+            "image":"images/barfi/bikano-barfi2.jpg",
+            "quantity":1
+        },
+        {
+            "id":39,
+            "category":"barfi",
+            "name":"Bikaji Do Duni Char Indian Sweets",
+            "price":900,
+            "subtotal":900,
+            "image":"images/barfi/bikano-barfi3.jpg",
+            "quantity":1
+        },
+        {
+            "id":40,
+            "category":"barfi",
+            "name":"Purpledip Meenakari Box For Fry Fruits ",
+            "price":550,
+            "subtotal":550,
+            "image":"images/barfi/bikano-barfi4.jpg",
+            "quantity":1
+        },
+        {
+            "id":41,
+            "category":"barfi",
+            "name":"Ghasitaram Sweets ",
+            "price":240,
+            "subtotal":240,
+            "image":"images/barfi/bikano-barfi5.jpg",
+            "quantity":1
+        },
+        {
+            "id":42,
+            "category":"soan papdi",
+            "name":"Soan Papdi",
+            "price":700,
+            "subtotal":700,
+            "image":"images/soan papdi/dmb-soan-papdi.jpg",
+            "quantity":1
+        },
+        {
+            "id":43,
+            "category":"soan papdi",
+            "name":"Soan Papdi Mango",
+            "price":500,
+            "subtotal":500,
+            "image":"images/soan papdi/dmb-soan-papdi1.jpg",
+            "quantity":1
+        },
+        {
+            "id":44,
+            "category":"soan papdi",
+            "name":"Bikaji Plain Burfi Indian Sweets",
+            "price":350,
+            "subtotal":350,
+            "image":"images/soan papdi/soan-papdi-blueberry.jpg",
+            "quantity":1
+        },
+        {
+            "id":45,
+            "category":"soan papdi",
+            "name":"Bikano Indian Sweets Khoya Kesar Burfi",
+            "price":450,
+            "subtotal":450,
+            "image":"images/soan papdi/soan-papdi-chocolate.jpg",
+            "quantity":1
+        },
+        {
+            "id":46,
+            "category":"soan papdi",
+            "name":"Soan Papdi Cran Berry",
+            "price":600,
+            "subtotal":600,
+            "image":"images/soan papdi/soan-papdi-chocolate.jpg",
+            "quantity":1
+        },
+        {
+            "id":47,
+            "category":"soan papdi",
+            "name":"Soan Papdi Blueberry",
+            "price":700,
+            "subtotal":700,
+            "image":"images/soan papdi/soan-papdi-cran-berry.jpg",
+            "quantity":1
+        },
+        {
+            "id":48,
+            "category":"soan papdi",
+            "name":"Soan Papdi Royal Anjeer",
+            "price":900,
+            "subtotal":900,
+            "image":"images/soan papdi/soan-papdi-duplex-box.jpg",
+            "quantity":1
+        },
+        {
+            "id":49,
+            "category":"soan papdi",
+            "name":"Soan Papdi Orange",
+            "price":550,
+            "subtotal":550,
+            "image":"images/soan papdi/soan-papdi-mango.jpg",
+            "quantity":1
+        },
+        {
+            "id":50,
+            "category":"soan papdi",
+            "name":"Soan Papdi Premium(Desi Ghee) 500gm",
+            "price":240,
+            "subtotal":240,
+            "image":"images/soan papdi/soan-papdi-mango1.jpg",
+            "quantity":1
+        },
+        {
+            "id":51,
+            "category":"soan papdi",
+            "name":"Soan Papdi Traditional 250 gm",
+            "price":240,
+            "subtotal":240,
+            "image":"images/soan papdi/soan-papdi-premium-desi-ghee.jpg",
+            "quantity":1
+        },
+        {
+            "id":52,
+            "category":"soan papdi",
+            "name":"Soan Papdi Mango",
+            "price":240,
+            "subtotal":240,
+            "image":"images/soan papdi/soan-papdi-royal-anjeer.jpg",
+            "quantity":1
+        },
+        {
+            "id":53,
+            "category":"soan papdi",
+            "name":"Soan Papdi Chocolate",
+            "price":240,
+            "subtotal":240,
+            "image":"images/soan papdi/soan-papdi-traditional.jpg",
+            "quantity":1
+        },
+        {
+            "id":54,
+            "category":"soan papdi",
+            "name":"Soan Papdi Duplex Box",
+            "price":240,
+            "subtotal":240,
+            "image":"images/soan papdi/soan-papdi1.jpg",
+            "quantity":1
+        },
+        {
+            "id":55,
+            "category":"peda",
+            "name":"Bikaji Mathura Peda Indian Sweets",
+            "price":240,
+            "subtotal":240,
+            "image":"images/peda/peda1.png",
+            "quantity":1
+        },
+        {
+            "id":56,
+            "category":"peda",
+            "name":"Bikaji Kesar Peda Indian Sweets",
+            "price":240,
+            "subtotal":240,
+            "image":"images/peda/peda2.png",
+            "quantity":1
+        },
+        {
+            "id":57,
+            "category":"peda",
+            "name":"Indian Craft Decorative Sweet Box",
+            "price":240,
+            "subtotal":240,
+            "image":"images/peda/peda3.png",
+            "quantity":1
+        },
+        {
+            "id":58,
+            "category":"soan papdi",
+            "name":"The Indian Chai Sweets Cinnamon ",
+            "price":249,
+            "subtotal":249,
+            "image":"images/peda/peda4.png",
+            "quantity":1
+        },
+        {
+            "id":59,
+            "category":"peda",
+            "name":"Bikaji Do-Duni Char Indian",
+            "price":240,
+            "subtotal":240,
+            "image":"images/peda/peda4.jpg",
+            "quantity":1
+        },
+        {
+            "id":60,
+            "category":"peda",
+            "name":"Ghasitaram Sweets ",
+            "price":240,
+            "subtotal":240,
+            "image":"images/peda/peda5.png",
+            "quantity":1
+        },
+        {
+            "id":61,
+            "category":"halwa",
+            "name":"Bikaji Badam Halwa",
+            "price":240,
+            "subtotal":240,
+            "image":"images/halwa/halwa1.png",
+            "quantity":1
+        },
+        {
+            "id":62,
+            "category":"halwa",
+            "name":"Bikaji Moong Dal Halwa Indian Sweets",
+            "price":240,
+            "subtotal":240,
+            "image":"images/halwa/halwa2.png",
+            "quantity":1
+        },
+        {
+            "id":63,
+            "category":"halwa",
+            "name":"Bikaji Moong Dal Halwa Indian Sweets",
+            "price":390,
+            "subtotal":290,
+            "image":"images/halwa/halwa3.jpg",
+            "quantity":1
+        },
+        {
+            "id":64,
+            "category":"halwa",
+            "name":"Delight Foods Dry Fruits",
+            "price":200,
+            "subtotal":200,
+            "image":"images/halwa/halwa4.jpg",
+            "quantity":1
+        },
+        {
+            "id":65,
+            "category":"halwa",
+            "name":"Indian Craft Decorative",
+            "price":210,
+            "subtotal":210,
+            "image":"images/halwa/halwa5.png",
+            "quantity":1
+        },
+        {
+            "id":66,
+            "category":"halwa",
+            "name":"Bikaji Kesar Kaju Halwa",
+            "price":300,
+            "subtotal":300,
+            "image":"images/halwa/halwa6.jpg",
+            "quantity":1
+        },
+        {
+            "id":67,
+            "category":"halwa",
+            "name":"Bikaji Kaju Soan Papdi ",
+            "price":240,
+            "subtotal":240,
+            "image":"images/halwa/halwa7.png",
+            "quantity":1
+        },
+        {
+            "id":68,
+            "category":"halwa",
+            "name":"Bikaji Mango Chocolate 250 gm",
+            "price":260,
+            "subtotal":260,
+            "image":"images/halwa/halwa8.png",
+            "quantity":1
+        }
+    ]
+}
