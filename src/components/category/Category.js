@@ -32,14 +32,6 @@ const Category = () => {
       path: 'images/soft-toy.webp',
       name: 'Soft Toys'
     },
-    // {
-    //   path: 'images/peda.webp',
-    //   name: 'Peda'
-    // },
-    // {
-    //   path: 'images/halwa.webp',
-    //   name: 'Halwa'
-    // }
   ]
   //Styled Typography
   const StyledTypo = styled(Typography)({

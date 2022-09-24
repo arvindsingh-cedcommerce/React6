@@ -36,25 +36,7 @@ const StyledTypo = styled(Typography)({
  lineHeight: '1.5',
  fontWeight: 'bold'
 })
-// const StyledTypo1 = styled(Typography)({
-//  // fontWeight: 'bold',
-//  color: '#fff',
-//  fontSize: '22px',
-//  margin: '13px'
 
-// })
-// const StyledTypo2 = styled(Typography)({
-//  color: '#fff',
-//  fontSize: '16px'
-// })
-// const StyledCard = styled(Card)`
-// background:#221f2d;
-// color:white;
-// maxWidth: 360px;
-// display:grid;
-// placeItems:center;
-
-// `
 //This component will show Categring Services
 const Categring_Services = () => {
  return (

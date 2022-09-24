@@ -9,10 +9,7 @@ import Footer from '../footer/Footer'
 import Gallery from '../gallery/Gallery'
 import Testimonial from '../testimonials/Testimonials'
 
-const StyledBox = styled(Box)({
-  // background: "linear-gradient(rgba(34, 31, 45, 0.81),rgba(34, 31, 45, 0.81)), url('images/bg1.jpg') ",
-  // backgroundColor:'#221f2d'
-})
+const StyledBox = styled(Box)({})
 
 const Home = () => {
   return (
