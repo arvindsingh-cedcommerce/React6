@@ -1,0 +1,12 @@
+#btn {
+    padding:15px 25px ;
+    background:#7e1717;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    color: #fff;   
+    margin-top: 20px;
+}
+#btn:hover {
+    border: 2px solid transparent;
+    border-radius: 10px;
+}

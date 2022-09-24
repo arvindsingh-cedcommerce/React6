@@ -1,0 +1,26 @@
+input {
+  padding: 13px;
+  width: 350px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+textarea {
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+#btn1 {
+  background-color: #7e1717;
+  color: #fff;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 15px 27px;
+  font-size: large;
+  cursor: pointer;
+}
+
+#btn1:hover {
+  border: 2px solid transparent;
+}
