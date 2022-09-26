@@ -92,7 +92,7 @@ const Products = () => {
             '& > :not(style)': {
               m: 1,
               width: 250,
-              height: '100%',
+              height: '24rem',
             },
           }}
         >
@@ -108,7 +108,7 @@ const Products = () => {
                           height={200} width={200} onClick={() => setSingleProductIndex(sweet.id)} />
                       </Link>
                     </Box>
-                    <Typography sx={{ mt: 2, color: '#272727' }}>{sweet.name}</Typography>
+                    <Typography className='name' >{sweet.name}</Typography>
                     <Typography sx={{ mt: 1, color: '#383838', fontWeight: 'bold', fontSize: '18px' }}>&#8377;{sweet.price}</Typography>
                     <Button variant="contained"
                       startIcon={<ShoppingCartOutlinedIcon />}
