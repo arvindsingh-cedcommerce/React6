@@ -151,7 +151,7 @@ const Navbar = () => {
         </Box>
         <MenuBox sx={{ display: { xs: 'none', sm: 'flex', md: 'flex' } }}>
           <StyledLink to='/' >HOME</StyledLink>
-          <StyledLink to='/products'>SWEETS</StyledLink>
+          <StyledLink to='/products'>TOYS</StyledLink>
         </MenuBox>
         <SearchBox sx={{ display: 'flex' }}>
           <TextField

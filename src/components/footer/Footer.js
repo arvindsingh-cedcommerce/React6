@@ -37,7 +37,7 @@ const Footer = () => {
               {'HOME'}
             </StyledLink>
             <StyledLink href="#" >
-              {'SWEETS'}
+              {'TOYS'}
             </StyledLink>
             <StyledLink href="#" >
               {'PRODUCTS'}
